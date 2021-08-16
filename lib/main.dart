@@ -1,34 +1,14 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_app/app_screen/Movie_list.dart';
 
-import "dart:ui";
+import 'app_screen/Movie_detail.dart';
 
-import"package:flutter/material.dart";
-void main()
-{
-
-  runApp(MaterialApp(
-   title: "home",
-    home: HomePage(),
-  )
+void main(){
+  runApp(
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: "YellowClass Assignment",
+      home: MovieList()
+    )
   );
-}
-class HomePage extends StatelessWidget{
-  @override
-  Widget build(BuildContext context) {
-
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          "App Bar",
-        ),
-        ),
-        body: Container(
-      child: Center( child: Text(
-          "This is the Center of Container"
-      )
-      ),
-
-      ),
-    );
-  }
-
 }
